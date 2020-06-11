@@ -67,6 +67,7 @@ class _LoginPageSate extends State<LoginPage> {
     // TODO: implement build
     return Scaffold(
       body: Container(
+        margin: EdgeInsets.all(20.0),
         color: Colors.white,
         alignment: Alignment.center,
         padding: const EdgeInsets.all(8.0),
@@ -78,8 +79,9 @@ class _LoginPageSate extends State<LoginPage> {
                     controller: _controller,
                     decoration: InputDecoration(hintText: 'Enter Title'),
                   ),
+                  SizedBox(height: 30.0,),
                   RaisedButton(
-                    child: Text('Create Data'),
+                    child: Text('Save Data'),
                     onPressed: () {
                       callAPI();
                     },
